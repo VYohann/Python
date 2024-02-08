@@ -1,5 +1,6 @@
 #fonctions python
 import random
+
 def bonjour():
     print("Bonjour le monde.")
 #print(boujour())

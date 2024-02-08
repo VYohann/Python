@@ -1,2 +1,3 @@
 #fonctions python
-print("Bonjour le monde.")
+def bonjour():
+    print("Bonjour le monde.")

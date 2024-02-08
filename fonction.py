@@ -14,5 +14,5 @@ def random_color():
 
 def des():
     return random.randint(1, 6)
-print(des())
+#print(des())
 

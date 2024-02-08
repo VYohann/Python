@@ -12,3 +12,7 @@ def random_color():
     return (r,g,b)
 #print(random_color())
 
+def des():
+    return random.randint(1, 6)
+#print(des())
+

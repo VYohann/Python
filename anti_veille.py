@@ -34,6 +34,7 @@ def mouvement_circulaire():
 
         if angle == 360:
             angle = 0
+            break
 
 # Boucle pour éviter la mise en veille
 while True:

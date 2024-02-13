@@ -14,28 +14,6 @@ def detecter_mouvement_souris():
     else:
         return False
 
-# Fonction pour effectuer un mouvement circulaire de diamètre 20 pixels
-def mouvement_circulaire():
-    rayon = 10  # La moitié du diamètre
-    centre_x, centre_y = pyautogui.position()
-    angle = 0
-
-    while True:
-        # Calcul des coordonnées polaires
-        x = int(centre_x + rayon * math.cos(math.radians(angle)))
-        y = int(centre_y + rayon * math.sin(math.radians(angle)))
-
-        # Déplacement de la souris aux coordonnées calculées
-        pyautogui.moveTo(x, y)
-        time.sleep(0.01)  # Réglage de la vitesse du mouvement
-
-        # Augmentation de l'angle pour effectuer un mouvement circulaire
-        angle += 1
-
-        if angle == 360:
-            angle = 0
-            break
-
 # Boucle pour éviter la mise en veille
 while True:
     if detecter_mouvement_souris():
@@ -43,7 +21,8 @@ while True:
         print("Mouvement de la souris détecté.")
     else:
         # Si aucun mouvement n'est détecté, déplacez la souris d'1 pixel
-        #pyautogui.move(1, 0)
-        mouvement_circulaire()
+        pyautogui.move(10, 0)
+        time.sleep(0.1)
+        pyautogui.move(-10, 0)
 
-    time.sleep(30)  # Attendez 60 secondes avant de vérifier à nouveau
+    time.sleep(30)  # Attendez xx secondes avant de vérifier à nouveau

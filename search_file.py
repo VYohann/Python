@@ -14,6 +14,6 @@ while True:
 
     # Exemple d'utilisation
     #nom_fichier_recherche = '$MB52.txt'
-    chemin_de_depart = 'C:/Yohann/'
+    chemin_de_depart = 'C:/'
 
     rechercher_fichier(nom_fichier_recherche, chemin_de_depart)
